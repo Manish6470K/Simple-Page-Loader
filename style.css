@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.screen{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 15px solid rgba(59, 55, 55, 0.76);
+    border-top: 15px solid rgb(13, 184, 27);
+    /* border-bottom: 5px solid red; */
+    background: transparent;
+    border-radius: 50%;
+    animation: anim1 1s linear infinite;
+}
+@keyframes anim1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
